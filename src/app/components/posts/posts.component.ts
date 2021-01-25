@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {PostService} from '../../services/post.service';
+import {Component, OnInit} from '@angular/core';
+import {PostService} from '../../services';
 import {PostInterface} from '../../interfaces';
 
 @Component({
@@ -11,9 +11,7 @@ import {PostInterface} from '../../interfaces';
 
 export class PostsComponent implements OnInit {
 
-  @Input()
   posts: PostInterface[];
-
   chosenOne: PostInterface;
 
   constructor(private postService: PostService) {
