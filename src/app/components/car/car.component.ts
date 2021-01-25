@@ -8,8 +8,6 @@ import {CarInterface} from '../../interfaces';
   styleUrls: ['./car.component.css']
 })
 export class CarComponent {
-
   @Input()
   car: CarInterface;
-
 }

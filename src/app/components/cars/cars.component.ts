@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 import {cars} from '../../dataBases';
 import {CarInterface} from '../../interfaces';
 
@@ -7,9 +7,7 @@ import {CarInterface} from '../../interfaces';
   templateUrl: './cars.component.html',
   styleUrls: ['./cars.component.css']
 })
+
 export class CarsComponent {
-
-  @Input()
   cars: CarInterface[] = cars;
-
 }

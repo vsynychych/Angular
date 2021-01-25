@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component} from '@angular/core';
 import {UserInterface} from '../../interfaces';
 import {users} from '../../dataBases';
 
@@ -8,8 +8,6 @@ import {users} from '../../dataBases';
   styleUrls: ['./users.component.css']
 })
 
-
 export class UsersComponent {
-  @Input()
   users: UserInterface[] = users;
 }
