@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  color: red;
+}
+
+.margin {
+  margin-left: 30px;
+}

@@ -1,0 +1,31 @@
+<div class="main">
+  <h3 class="center"> {{fullUser?.name}}  </h3>
+  <ul>
+    <li>Id: {{fullUser?.id}} </li>
+    <li>Name: {{fullUser?.name}}</li>
+    <li>E-mail: {{fullUser?.email}}</li>
+    <li>Address:
+      <ul>
+        <li>City: {{fullUser?.address.city}}</li>
+        <li>Street: {{fullUser?.address.street}}</li>
+        <li>Suite: {{fullUser?.address.suite}}</li>
+        <li>Zipcode: {{fullUser?.address.zipcode}}</li>
+        <li>Geo:
+          <ul>
+            <li>lat: {{fullUser?.address.geo.lat}}</li>
+            <li>lng: {{fullUser?.address.geo.lng}}</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Phone: {{fullUser?.phone}}</li>
+    <li>Website: {{fullUser?.website}}</li>
+    <li>Company:
+      <ul>
+        <li>name:{{fullUser?.company.name}}</li>
+        <li>catchPhrase: {{fullUser?.company.catchPhrase}}</li>
+        <li>bs: {{fullUser?.company.bs}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>

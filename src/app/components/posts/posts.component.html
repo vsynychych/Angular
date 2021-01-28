@@ -1,0 +1,6 @@
+<div class="main">
+  <div>
+    <app-post *ngFor="let item of posts" [post]="item"></app-post>
+  </div>
+  <router-outlet class="padding"></router-outlet>
+</div>
