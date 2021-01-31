@@ -1,0 +1,6 @@
+<div>
+  <router-outlet></router-outlet>
+  <div *ngFor="let item of posts">
+    <app-post [post]="item"></app-post>
+  </div>
+</div>

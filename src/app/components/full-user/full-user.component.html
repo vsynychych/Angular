@@ -1,0 +1,24 @@
+<div>
+  <ul>
+    <li><b>User: {{user.id}}</b></li>
+    <li><b>Name: {{user.name}}</b></li>
+    <li>Email: {{user.email}}</li>
+    <li>Address:
+      <ul>
+        <li>City: {{user.address.city}}</li>
+        <li>Street: {{user.address.street}}</li>
+        <li>Suite: {{user.address.suite}}</li>
+        <li>Zipcode: {{user.address.zipcode}}</li>
+        <li>
+          <ul>Geo:
+            <li>lat: {{user.address.geo.lat}}</li>
+            <li>lng: {{user.address.geo.lng}}</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Phone: {{user.phone}}</li>
+    <li>Phone: {{user.website}}</li>
+  </ul>
+  <hr>
+</div>

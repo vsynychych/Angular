@@ -1,0 +1,6 @@
+<div>
+  <router-outlet></router-outlet>
+  <div *ngFor="let item of users">
+    <app-user [user]="item"></app-user>
+  </div>
+</div>
