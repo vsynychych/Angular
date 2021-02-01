@@ -9,7 +9,6 @@ import {IUser} from '../../interfaces';
   styleUrls: ['./full-user.component.css']
 })
 export class FullUserComponent implements OnInit {
-  id: number;
   fullUser: IUser;
 
   constructor(private activatedRoute: ActivatedRoute, private userService: UserService) {
@@ -17,8 +16,7 @@ export class FullUserComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(value => {
-      this.id = value.id;
-      this.userService.getUserById(this.id).subscribe(value1 => this.fullUser = value1);
+      this.userService.getUserById(value.id).subscribe(value1 => this.fullUser = value1);
     });
   }
 }

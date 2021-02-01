@@ -9,7 +9,6 @@ import {IPost} from '../../interfaces';
   styleUrls: ['./full-post.component.css']
 })
 export class FullPostComponent implements OnInit {
-  id: number;
   fullPost: IPost;
 
   constructor(private postService: PostService, private activatedRoute: ActivatedRoute) {
@@ -17,8 +16,7 @@ export class FullPostComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(value => {
-      this.id = value.id;
-      this.postService.getPostById(this.id).subscribe(value1 => this.fullPost = value1);
+      this.postService.getPostById(value.id).subscribe(value1 => this.fullPost = value1);
     });
   }
 }
