@@ -1,0 +1,8 @@
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.margin {
+  margin-right: 30px;
+}
