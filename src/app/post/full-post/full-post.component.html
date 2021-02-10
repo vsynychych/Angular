@@ -1,0 +1,11 @@
+<div>
+  <div class="main">
+    {{fullPost?.id}} - {{fullPost?.title}}<br>
+    {{fullPost?.body}}
+  </div>
+  <div class="count">
+    <h3>Count: {{inc}}</h3>
+    <button (click)="countInc()">Increment</button>
+    <button (click)="countDec()">Decrement</button>
+  </div>
+</div>

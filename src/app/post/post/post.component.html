@@ -1,0 +1,6 @@
+<div class="main">
+  <div>{{post.id}} - {{post.title}}</div>
+  <div>
+    <button [class.hide]="hide===post.id" (click)="hidden()" [routerLink]="[post.id]">More info{{post.id}}</button>
+  </div>
+</div>
